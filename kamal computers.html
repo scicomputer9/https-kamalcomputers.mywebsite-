@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kamal Computer Education & Cyber Cafe</title>
+  <meta name="description" content="कम्प्यूटर प्रशिक्षण केंद्र - बेसिक, टैली, डीसीए, पाइथन, फोटोशॉप, हार्डवेयर कोर्सेस" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #ff6f61;
+      --secondary: #00bcd4;
+      --accent: #8bc34a;
+      --bg-light: #f9fafb;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:'Poppins',sans-serif;
+      background: url('https://cdn.pixabay.com/photo/2016/03/09/09/17/keyboard-1243096_1280.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color:#222;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(255,255,255,0.88);
+      z-index: -1;
+    }
+    header{
+      background: linear-gradient(90deg,#ff6f61,#ffb300,#00bcd4,#8bc34a);
+      background-size:400% 400%;
+      animation:gradient 10s ease infinite;
+      color:white;
+      padding:35px 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    @keyframes gradient {
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    .container{max-width:1100px;margin:auto;padding:20px}
+    .brand{display:flex;align-items:center;gap:18px}
+    .logo img{width:85px;height:85px;border-radius:12px}
+    h1{
+      font-size:2.5rem;
+      margin:0;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+    nav{margin-top:10px}
+    nav a{color:white;text-decoration:none;margin-right:15px;font-weight:600;font-size:1.05rem}
+
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:25px;align-items:center;margin-top:20px}
+    .card{
+      background:white;
+      border-radius:12px;
+      box-shadow:0 4px 20px rgba(0,0,0,0.1);
+      padding:25px;
+    }
+    .btn{
+      display:inline-block;
+      background:var(--secondary);
+      color:white;
+      padding:12px 18px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      margin-top:15px;
+      font-size:1rem;
+    }
+    .btn:hover{background:#0097a7}
+
+    .chip{background:#e3f2fd;padding:6px 12px;border-radius:999px;margin:4px;display:inline-block}
+
+    .section-title{
+      color:#ff6f61;
+      margin-bottom:10px;
+      font-size:1.8rem;
+      font-weight:700;
+      text-transform:uppercase;
+      text-align:center;
+    }
+
+    h2.section-title::after{
+      content:"";
+      display:block;
+      width:60px;
+      height:4px;
+      background:#00bcd4;
+      margin:8px auto;
+      border-radius:4px;
+    }
+
+    footer{
+      background:#222;
+      color:#ccc;
+      padding:20px 0;
+      text-align:center;
+      margin-top:30px;
+      font-size:0.95rem;
+    }
+
+    @media(max-width:880px){
+      .hero{grid-template-columns:1fr}
+      h1{font-size:1.8rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="brand">
+        <div class="logo"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Computer Logo"></div>
+        <div>
+          <h1>Kamal Computer Education & Cyber Cafe</h1>
+          <p style="font-size:1.1rem">अकबरी मार्केट, औरंगाबाद, बुलंदशहर — बस स्टैंड के पास</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">हमारे बारे में</a>
+        <a href="#courses">कोर्सेस</a>
+        <a href="#facilities">सुविधाएँ</a>
+        <a href="#contact">संपर्क करें</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h2 class="section-title">प्रोफेशनल कंप्यूटर ट्रेनिंग</h2>
+        <p>हमारे यहाँ छोटे बैच में उच्च स्तरीय कंप्यूटर शिक्षा दी जाती है। हर छात्र को व्यक्तिगत रूप से गाइड किया जाता है ताकि वो आत्मनिर्भर बन सके।</p>
+        <a href="Kamal_Computer_Brochure_English.pdf" class="btn">📄 Download Brochure</a>
+        <div style="margin-top:10px">
+          <strong>लोकप्रिय कोर्सेस:</strong>
+          <div>
+            <span class="chip">Basic Computer</span>
+            <span class="chip">Tally Prime (GST)</span>
+            <span class="chip">DCA</span>
+            <span class="chip">Python</span>
+            <span class="chip">Photoshop</span>
+            <span class="chip">Hardware</span>
+          </div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3 style="font-size:1.4rem;color:#00bcd4;margin-bottom:10px;">संपर्क विवरण</h3>
+        <p><strong>फोन:</strong> <a href="tel:+919675978268">9675978268</a></p>
+        <p><strong>ईमेल:</strong> <a href="mailto:scicomputer9@gmail.com">scicomputer9@gmail.com</a></p>
+        <p><strong>पता:</strong> अकबरी मार्केट, औरंगाबाद, बुलंदशहर</p>
+        <p><strong>समय:</strong> सोम - शनि: 9:30 AM - 7:00 PM</p>
+      </aside>
+    </section>
+
+    <section id="about" style="margin-top:25px">
+      <div class="card">
+        <h2 class="section-title">हमारा उद्देश्य</h2>
+        <p>कम्प्यूटर शिक्षा आज के युग की सबसे ज़रूरी आवश्यकता बन चुकी है। कमल कंप्यूटर एजुकेशन का उद्देश्य हर विद्यार्थी को कम्प्यूटर ज्ञान से सशक्त बनाना है ताकि वे किसी भी क्षेत्र में आत्मनिर्भर बन सकें।</p>
+      </div>
+    </section>
+
+    <section id="facilities" style="margin-top:25px">
+      <div class="card">
+        <h2 class="section-title">हमारी सुविधाएँ</h2>
+        <ul style="text-align:left;font-size:1rem;line-height:1.8;">
+          <li>प्रत्येक विद्यार्थी के लिए अलग कम्प्यूटर</li>
+          <li>प्रैक्टिकल आधारित ट्रेनिंग</li>
+          <li>कम फीस में प्रोफेशनल कोर्सेस</li>
+          <li>सर्टिफिकेट उपलब्ध</li>
+          <li>अनुभवी प्रशिक्षक</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="courses" style="margin-top:25px">
+      <div class="card">
+        <h2 class="section-title">कोर्सेस की सूची</h2>
+        <ul style="text-align:left;font-size:1rem;line-height:1.8;">
+          <li><strong>Basic Computer:</strong> कम्प्यूटर की बुनियादी जानकारी, MS Office, इंटरनेट।</li>
+          <li><strong>Tally Prime with GST:</strong> अकाउंटिंग, बिलिंग, जीएसटी, रिपोर्ट्स।</li>
+          <li><strong>DCA:</strong> Microsoft Office, Internet, HTML, Tally और DBMS।</li>
+          <li><strong>Python:</strong> बेसिक से लेकर प्रोजेक्ट तक।</li>
+          <li><strong>Photoshop:</strong> फोटो एडिटिंग, डिजाइनिंग।</li>
+          <li><strong>Hardware:</strong> पीसी असेंबलिंग, रिपेयरिंग।</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:25px">
+      <div class="card">
+        <h2 class="section-title">संपर्क करें</h2>
+        <p>अधिक जानकारी के लिए या एडमिशन के लिए नीचे दिए गए माध्यमों से संपर्क करें:</p>
+        <p>📞 <strong>मोबाइल:</strong> <a href="tel:+919675978268">9675978268</a></p>
+        <p>📧 <strong>ईमेल:</strong> <a href="mailto:scicomputer9@gmail.com">scicomputer9@gmail.com</a></p>
+        <iframe title="map" src="https://www.google.com/maps?q=Bulandshahr%20Bus%20Stand%20Aurangabad&output=embed" style="width:100%;height:220px;border:0;border-radius:8px;margin-top:10px"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Kamal Computer Education & Cyber Cafe | Developed with ❤️ in Bulandshahr</p>
+  </footer>
+</body>
+</html>
